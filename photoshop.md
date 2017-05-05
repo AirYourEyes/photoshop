@@ -93,5 +93,38 @@
     - gif支持半透明，支持动画效果，支持的颜色单调，使用无损压缩
 	- psd是四种格式中唯一支持保存图层的格式，但文件比较大
 
+## 七、界面组织
+- 通过调整界面的颜色可有利于观察不同的图片时，有不同的对比
+- 可以按Ctrl + F2调整界面，使其颜色变浅，成浅灰色
+- 可以按ctrl + F1调整界面，使其颜色加深变黑 
+初始界面显示的效果
+![black_interface](images/black_interface.png)
+按Ctrl + F2后的显示效果
+![gray_interface](images/gray_interface.png)
+按Ctrl + F1后的显示效果
+![black_interface](images/black_interface.png)
+- 也可以通过右键画布，选择不同的颜色
+- 在ps最左边的工具栏的最下面可以找到如下的图标![screen_tip](images/screen_tip.png)，右击图标可以选择屏幕模式，如可以设置全屏显示，按F键或ESC键退出全屏，按Tab键显示面板
 
+## 八、移动工具的使用
+- 在工具栏中可以找到图标![select_tool](images/select_tool.png)，它表示的是选择工具
+- 打开图片时，若图层面板中显示如下，即显示一个名为“背景”的图层，在其最右边有一个锁的标志，则不能直接使用选择工具移动图片，否则会提示错误信息
+![cant_move_picture](images/cant_move_picture.png)
+- 要移动图片必须将锁移除，如下图所示，将锁标志沿着箭头移动到下面的垃圾桶中，即可移除锁
+![remove_lock](images/remove_lock.png)
+此时就可以移动图片了，如下图所示
+![move_picture](images/move_picture.png)
+- 如果我们点击工具栏上的“矩形选框工具”(显示图标为![rectangle_select](images/rectangle_select.png))，在只有单一图层的图片选择一定的区域后（虚线框中的区域被选中），然后用选择工具移动，会出现以下的效果
+![select](images/select.png)
+此时我们按快捷键Ctrl+D（取消选择），被选中的区域不再被选中，它会覆盖原先的区域，此时我们移动图片的时候将移动整个图片，如下图所示(此时假如我们想把复原图片的话，选中之前被选中的区域，但当我们移动的时候会发现，连原先被覆盖的区域也跟着移动....)：
+![unselect](images/unselect.png)
+其实最好的操作方法就是按Ctrl+J将被选中的区域复制到新的图层，这是我们移动被选中的区域的图层不会对原先的图片造成任何的影响
 
+## 九、初识选择区
+- 关于选择区工具，我们在知识点八中其实已经看到，在工具栏中找到![rectangle_select](images/rectangle_select.png)
+- 选择区的作用其实是选择我们编辑的区域范围，对选择区的编辑不会影响选择区之外的区域
+原先的图片是这样的
+![original](images/original.png)
+选择区域并修改显示颜色，修改后的图片显示如下：
+![edit_select](images/edit_select.png)
+在编辑的时候我们会发现我们只能对被选中的区域进行编辑，而不能对选中的区域外进行编辑
